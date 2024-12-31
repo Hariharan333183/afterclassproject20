@@ -1,0 +1,44 @@
+<html>
+
+<body>
+    <h1>datatype conservation</h1>
+    <p id="il"></p>
+    <script>
+        var friends = ['Hari', 'Jigisha mam', 'donald', 'sumanth'];
+        //index :       0          1           2          3
+        document.write(friends[1] + "<br>");
+
+        var x = friends.join("****");
+        document.write(friends + "<br>");
+        document.write(x + "<br>");
+
+        var y = friends.pop();
+        document.write(friends + "<br>");
+        document.write(y + "<br>");
+        document.write("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+        function add(a, b, c) {
+            document.write(a + b + c + "<br>");
+            var x = a + b + c;
+            document.write(x + "<br>");
+            document.write("add function ends <br>");
+        }
+
+        function sub(a, b, c) {
+            document.write("sub function starts <br>");
+            var x = a - b - c;
+            document.write(x + "<br>");
+            document.write("sub function ends <br>");
+        }
+
+        function calc(x, y, z) {
+            document.write("calc function starts <br>");
+            add(x, y, z);
+            sub(x, y, z);
+            document.write("calc function ends <br>");
+        }
+        calc(3, 9, 2);
+
+    </script>
+</body>
+
+</html>
